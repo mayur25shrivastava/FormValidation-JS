@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION FORM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>REGISTRATION FORM</h2>
+      </div>
+      <form action="" div class="form" id="form">
+        <div class="form-control">
+          <label for="">Username</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter Your Name"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Phone Number</label>
+          <input
+            type="number"
+            id="phone"
+            placeholder="Enter Your Phone Number"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Your password"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form-control">
+          <label for="">Confirm password</label>
+          <input
+            type="password"
+            id="cpassword"
+            placeholder="Enter Your password again"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Error Msg</small>
+        </div>
+        <input type="submit" value="submit" class="btn" />
+      </form>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

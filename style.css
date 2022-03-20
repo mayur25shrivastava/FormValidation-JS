@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Source+Sans+Pro:wght@300&display=swap');
+/* font-family: 'Playfair Display', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('cric2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family:'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+
+}
+
+.container{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 2px rgba(0,0,0,0.048);
+    overflow: hidden;
+    width: calc(100vw-65vw);
+    max-width: 100%;
+    width: 50vw;
+}
+
+.header{
+    background-color: rgb(57, 15, 155);
+    /* background-color: rgb(162, 226, 226); */
+    padding: 30px 0;
+}
+
+.header h2{
+    color: #222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form{
+    padding: 40px;
+
+}
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px solid rgb(247, 234, 234);
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-circle-check{
+    color: #2ecc71 ;
+    visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation{
+    color: #e74c3c ;
+    visibility: visible;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form .btn{
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    color: rgb(41, 13, 163);
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px 0;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.form .btn:hover{
+    background-color: rgb(36, 14, 158);
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width:998px) {
+    .container{
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}
