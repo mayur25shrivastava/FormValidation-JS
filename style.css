@@ -129,8 +129,15 @@ body{
 }
 
 @media (max-width:998px) {
+
+    body{
+        background-size: 140%;
+    }
+
     .container{
         width: calc(100vw - 35vw);
         max-width: 100%;
+
     }
+    
 }
